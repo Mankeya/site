@@ -548,3 +548,64 @@ header .btn-contato button:hover{
     text-decoration: none;
     cursor: pointer;
 }
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 100px 5%;
+        min-width: unset;
+        align-items: center;
+    }
+
+    .description-container,
+    .photo-container,
+    .details-container {
+        width: 100%;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .photo-container img {
+        width: 250px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .skill {
+        margin: 0 auto;
+    }
+
+    #hello, #name, #position {
+        font-size: 32px;
+        height: auto;
+    }
+
+    #hire-me-btn,
+    #my-works-btn {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    #about-title,
+    #skills-title,
+    #contact-title {
+        font-size: 48px;
+        text-align: center;
+    }
+
+    .contact-div-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .user-entry,
+    .my-contact-infos {
+        width: 100%;
+        max-width: 340px;
+    }
+}
